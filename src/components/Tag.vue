@@ -1,19 +1,16 @@
 <script lang="ts">
-export default{
-    props: {
-        texto: {
-            type: String,
-            required: true
-        },
-        ativa: Boolean
-    }
+export default {
+  props: {
+    texto: { type: String, required: true },
+    ativa: Boolean
+  }
 }
 </script>
 
 <template>
-    <span :class="['tag', {ativa}]">
-        {{ texto }}
-    </span>
+  <span :class="['tag', { ativa }]">
+    {{ texto }}
+  </span>
 </template>
 
 <style scoped>
@@ -23,9 +20,9 @@ export default{
   min-width: 4.25rem;
   padding: 0.5rem;
   text-align: center;
-  transition: 0.2s;
+	transition: 0.2s;
   color: var(--cinza);
-  background-color: var(--cinza-claro);
+  background: var(--cinza-claro);
   font-weight: 400;
 }
 
@@ -34,5 +31,4 @@ export default{
   background: var(--coral, #F0633C);
   font-weight: 700;
 }
-
 </style>

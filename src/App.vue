@@ -1,13 +1,15 @@
 <script lang="ts">
 import Banner from './components/Banner.vue';
-import ConteudoPrincipalVue from './components/ConteudoPrincipal.vue';
+import ConteudoPrincipal from './components/ConteudoPrincipal.vue';
+import Rodape from './components/Rodape.vue';
 
 export default {
-  components: { Banner: Banner, ConteudoPrincipalVue: ConteudoPrincipalVue }
+  components: { Banner, ConteudoPrincipal, Rodape }
 }
 </script>
 
 <template>
   <Banner />
-  <ConteudoPrincipalVue/>
+  <ConteudoPrincipal />
+  <Rodape />
 </template>
